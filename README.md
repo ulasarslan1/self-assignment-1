@@ -1,2 +1,3 @@
+- 1st question solution by Mrunal Dipjay Vichare
 - 3rd question is made by Adithya Ambazhappilly Radhakrishnan
 - 4th question is made by Ulaş Arslan 
