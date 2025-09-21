@@ -1,0 +1,30 @@
+package self_assignment1;
+
+public class MathCalc {
+
+	    public static void main(String[] args)
+	    {
+	        // Diameters (in miles)
+	        double diameterSun = 865000.0;
+	        double diameterEarth = 7600.0;
+
+	        // Calculation of Radii
+	        double radiusSun = diameterSun / 2.0;       //  865000 / 2 = 432500 miles
+	        double radiusEarth = diameterEarth / 2.0;  //   7600 / 2 = 3800 miles
+
+	        // Computing Volumes of Sun and Earth
+	        // volume of a sphere = 4/3*pi*r^3
+	        double volumeSun = (4.0 / 3.0) * Math.PI * Math.pow(radiusSun, 3);             // ~3.4 x 10^17 cubic miles
+	        double volumeEarth = (4.0 / 3.0) * Math.PI * Math.pow(radiusEarth, 3);        //  ~2.3 x 10^11 cubic miles
+
+	        // Ratio of Sun's volume to Earth's volume
+	        double ratio = volumeSun / volumeEarth;  // ~ 1.5 x 10^6  
+	        // The Sun is about 1.5 million times bigger than the Earth in volume
+
+	        // Print the results
+	        System.out.printf("The volume of the Earth is %, .2f cubic miles,%n", volumeEarth);
+	        System.out.printf("the volume of the Sun is %, .2f cubic miles,%n", volumeSun);
+	        System.out.printf("and the ratio of the volume of the Sun to the volume of the Earth is %, .2f%n", ratio);
+	    }
+
+}
