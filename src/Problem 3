@@ -1,0 +1,36 @@
+public class StringCharacters {
+
+    public static void main(String[] args) {
+        String text = "To be or not to be, that is the question;"
+                    + "Whether `tis nobler in the mind to suffer"
+                    + " the slings and arrows of outrageous fortune,"
+                    + " or to take arms against a sea of troubles,"
+                    + " and by opposing end them?";
+
+        int spaces = 0;
+        int vowels = 0;
+        int letters = 0;
+
+        for (int i = 0; i < text.length(); i++)
+     {
+            char ch = text.charAt(i);
+
+            if (Character.isLetter(ch)) 
+           {
+                letters++;
+                ch = Character.toLowerCase(ch);
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                {
+                    vowels++;
+                }
+            }
+           else if (ch == ' ') 
+            {
+                spaces++;
+            }
+      }
+
+        // output
+        System.out.println("The text contained: Vowels = " + vowels + ", Consonants = " + (letters - vowels) + ", Spaces = " + spaces);
+    }
+}
