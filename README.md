@@ -3,4 +3,4 @@
 - 3rd question is made by Adithya Ambazhappilly Radhakrishnan
 - 4th question is made by Ulaş Arslan 
 
-  Problem 3 and 4 are in the src directory
+Problem 2, Problem 3 and 4 are in the src directory
